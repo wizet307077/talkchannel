@@ -4,8 +4,8 @@ import { useEffect, useRef } from "react";
 
 declare global {
   interface Window {
-    gtag: (command: string, action: string, params?: any) => void;
-    dataLayer: any[];
+    gtag: (command: string, action: string, params?: Record<string, unknown>) => void;
+    dataLayer: unknown[];
   }
 }
 
@@ -18,7 +18,7 @@ export function setupGoogleAnalytics(measurementId: string) {
 
   // GA4 설정 스크립트
   window.dataLayer = window.dataLayer || [];
-  function gtag(...args: any[]) {
+  function gtag() {
     window.dataLayer.push(arguments);
   }
   gtag("js", new Date());
