@@ -79,8 +79,8 @@ export function Problem() {
           className="mt-12 text-center"
         >
           <div className="bg-gray-100 p-6 rounded-xl inline-block max-w-3xl">
-            <p className="text-xl md:text-2xl font-bold italic">
-              "SNS·배달앱 수수료 없이 <span className="text-indigo-600">단골을 직접</span> 관리하고 싶은데, 
+            <p className="text-xl md:text-2xl font-bold italic leading-relaxed md:leading-relaxed">
+              "SNS·배달앱 수수료 없이 <span className="text-indigo-600">단골을 직접</span> 관리하고 싶은데,<br className="hidden sm:block" /> 
               <span className="text-indigo-600">디지털 마케팅 지식·시간</span>이 없다."
             </p>
           </div>
